@@ -2,9 +2,9 @@ REQUEST HB_CODEPAGE_PT850
 
 PROCEDURE Main()
     LOCAL cData
-    LOCAL cHora := TIME()
+    LOCAL cHora
     LOCAL cNome := "Derli"
-    LOCAL cCidade := "S∆o Paulo"
+    LOCAL cCidade := "S√£o Paulo"
 
     SET DATE BRITISH
     SET CENTURY ON
@@ -12,9 +12,10 @@ PROCEDURE Main()
     hb_cdpSelect("PT850")
 
     cData := DToC(Date())
+    cHora := TIME()
 
     QOut("===========================")
-    QOut("  FICHA DE APRESENTAÄ«O    ")
+    QOut("  FICHA DE APRESENTA√á√ÉO    ")
     QOut("===========================")
     QOut(hb_StrFormat("Nome     : %s", cNome))
     QOut(hb_StrFormat("Cidade   : %s", cCidade))
@@ -22,5 +23,5 @@ PROCEDURE Main()
     QOut(hb_StrFormat("Data     : %s", cData))
     QOut(hb_StrFormat("Hora     : %s", cHora))
     QOut("===========================")
-    
+
 RETURN

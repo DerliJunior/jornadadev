@@ -1,13 +1,13 @@
 REQUEST HB_CODEPAGE_PT850
 
 PROCEDURE Main()
+    LOCAL cCidade := "S√£o Paulo"
     LOCAL cNome := "Derli"
-    LOCAL cCidade := "S∆o Paulo"
 
     hb_cdpSelect("PT850")
 
     QOut("===========================")
-    QOut("  FICHA DE APRESENTAÄ«O    ")
+    QOut("  FICHA DE APRESENTA√á√ÉO    ")
     QOut("===========================")
     QOut(hb_StrFormat("Nome     : %s", cNome))
     QOut(hb_StrFormat("Cidade   : %s", cCidade))
