@@ -1,0 +1,9 @@
+# Editors
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Executables
+*.exe
