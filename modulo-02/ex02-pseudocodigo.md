@@ -10,6 +10,7 @@ Dica: use as palavras Leia, Escreva, Se ... Senão e o operador `<-` para atribu
 ---
 
 ### A:
+    Início
     variável base, altura, area
 
     escreva("Digite o tamanho da base")
@@ -21,8 +22,10 @@ Dica: use as palavras Leia, Escreva, Se ... Senão e o operador `<-` para atribu
     area <- base * altura
 
     mostre(area)
+    Fim
 
 ### B:
+    Início
     variável numero
 
     escreva("Digite um número")
@@ -33,7 +36,10 @@ Dica: use as palavras Leia, Escreva, Se ... Senão e o operador `<-` para atribu
     senao
         mostre(falso)
 
+    Fim
+
 ### C:
+    Início
     variavel numero1, numero2, numero3, maior_numero
 
     escreva("Digite o 1° numero")
@@ -53,5 +59,4 @@ Dica: use as palavras Leia, Escreva, Se ... Senão e o operador `<-` para atribu
         maior_numero <- numero3
 
     mostre(maior_numero)
-
-
+    Fim
