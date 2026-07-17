@@ -1,9 +1,10 @@
 procedure Main()
     local nMes
 
-    input "Digite o n£mero do mˆs de 1 a 12 (Janeiro at‚ Dezembro): " to nMes
+    input "Digite o nÃºmero do mÃªs de 1 a 12 (Janeiro atÃ© Dezembro): " to nMes
 
     QOut(ExtrairNomeMes(nMes))
+    
     QOut(ExtrairNomeMesSimplificado(nMes))
 return
 
@@ -16,7 +17,7 @@ function ExtrairNomeMes(nMes)
         case nMes == 2
             cNomeMes := "Fevereiro"
         case nMes == 3
-            cNomeMes := "Mar‡o"
+            cNomeMes := "MarÃ§o"
         case nMes == 4
             cNomeMes := "Abril"
         case nMes == 5
@@ -36,10 +37,10 @@ function ExtrairNomeMes(nMes)
         case nMes == 12
             cNomeMes := "Dezembro"
         otherwise
-            cNomeMes := "Mˆs inv lido"
+            cNomeMes := "MÃªs invÃ¡lido"
     endcase
 return cNomeMes
 
 function ExtrairNomeMesSimplificado(nMes)
-    local cNomeMes := if(!(nMes < 1 .OR. nMes > 12), NToCMonth(nMes), "Mˆs inv lido")
+    local cNomeMes := if(!(nMes < 1 .OR. nMes > 12), NToCMonth(nMes), "MÃªs invÃ¡lido")
 return cNomeMes

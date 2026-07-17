@@ -10,7 +10,7 @@ procedure Main()
     local nSalario
     local nNovoSalario
 
-    Input "Digite o sal†rio do colaborador: " to nSalario
+    Input "Digite o sal√°rio do colaborador: " to nSalario
 
     do while nSalario <= 0
         Input "Digite um valor maior que 0 para o colaborador: " to nSalario
@@ -18,9 +18,7 @@ procedure Main()
 
     nNovoSalario := AjusteSalarial(nSalario)
 
-    // QOut("Sal†rio atual: R$" + LTrim(Str(nSalario, 10, 2)))
-    QOut("Novo sal†rio: R$" + LTrim(Str(nNovoSalario, 10, 2)))
-    // QOut("Aumento de: " + LTrim(Str(CalcularAumentoPercentil(nSalario, nNovoSalario), 10, 2)) + "%")
+    QOut("Novo sal√°rio: R$" + LTrim(Str(nNovoSalario, 10, 2)))
 return
 
 function AjusteSalarial(nSalario)
@@ -35,8 +33,3 @@ function AjusteSalarial(nSalario)
     endif 
 
 return NIL
-
-// function CalcularAumentoPercentil(nSalarioAntigo, nSalarioNovo)
-//     local percentil := ((nSalarioNovo * 100.0) / nSalarioAntigo) - 100.0
-// return percentil
-
