@@ -1,14 +1,14 @@
 procedure Main()
     local nNumero1, nNumero2, nMaior, nMenor
 
-    input "Digite o 1ø n£mero:" to nNumero1
-    input "Digite o 2ø n£mero:" to nNumero2
+    input "Digite o 1Â° nÃºmero: " to nNumero1
+    input "Digite o 2Â° nÃºmero: " to nNumero2
 
     nMaior := nNumero1
     nMenor := nNumero2
 
     if nNumero1 == nNumero2 
-        QOut("Ambos sÆo iguais")
+        QOut("Ambos sÃ£o iguais")
     elseif nNumero1 < nNumero2
         nMenor := nNumero1
         nMaior := nNumero2
@@ -22,7 +22,7 @@ return
 
 function MensagemMaiorMenor(nMaior, nMenor)
     QOut("************************")
-    QOut(hb_StrFormat("O maior ‚ %d", nMaior))
-    QOut(hb_StrFormat("O menor ‚ %d", nMenor))
+    QOut(hb_StrFormat("O maior Ã© %d", nMaior))
+    QOut(hb_StrFormat("O menor Ã© %d", nMenor))
     QOut("************************")
 return NIL
