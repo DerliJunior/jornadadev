@@ -4,7 +4,7 @@ procedure Main()
     local nContador := 0
 
     while .T.
-        accept "Digite um numero para somar (0 para sair): " to nValor
+        accept "Digite um número para somar (0 para sair): " to nValor
         nValor := Val(nValor)
 
         if  nValor== 0

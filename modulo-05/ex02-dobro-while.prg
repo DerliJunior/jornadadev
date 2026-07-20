@@ -10,7 +10,6 @@ procedure Main()
             exit
         endif
 
-        QOut("O dobro de " + Alltrim(Str(nValor)) + " ‚: " + Alltrim(Str(nValor * 2)))
+        QOut("O dobro de " + Alltrim(Str(nValor)) + " Ã©: " + Alltrim(Str(nValor * 2)))
     enddo
-
 return

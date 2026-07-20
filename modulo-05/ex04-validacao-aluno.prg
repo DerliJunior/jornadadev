@@ -19,8 +19,7 @@ procedure Main()
     QOut("Disciplina: " + cDisc)
     QOut("Nota 1: " + LTrim(Str(nNota1, 10, 2)))
     QOut("Nota 2: " + LTrim(Str(nNota2, 10, 2)))
-    QOut("M‚dia: " + LTrim(Str(nMedia, 10, 2)))
-
+    QOut("MÃ©dia: " + LTrim(Str(nMedia, 10, 2)))
 return
 
 function NomeAlunoValido()
@@ -32,7 +31,7 @@ function NomeAlunoValido()
         if Len(Trim(cNome)) > 0
             exit
         else
-            accept "Nome inv lido. Informe um nome v lido: " to cNome
+            accept "Nome invÃ¡lido. Informe um nome vÃ¡lido: " to cNome
         endif
     enddo
 return cNome
@@ -40,13 +39,13 @@ return cNome
 function DisciplinaValida()
     local cDisc := ""
 
-    accept "Digite a disciplina com 3 letras mai£sculas, ex: MAT, POR, FIS): " to cDisc
+    accept "Digite a disciplina com 3 letras maiÃºsculas, ex: MAT, POR, FIS): " to cDisc
 
     do while .t.
         if Len(cDisc) == 3 .AND. cDisc == Upper(cDisc)
             exit
         else
-            accept "Disciplina inv lida. Deve ter 3 letras mai£sculas, ex: MAT, POR, FIS: " to cDisc
+            accept "Disciplina invÃ¡lida. Deve ter 3 letras maiÃºsculas, ex: MAT, POR, FIS: " to cDisc
         endif
     enddo
 return cDisc
@@ -62,7 +61,7 @@ function NotaAlunoValida()
         if nNota1 >= 0 .and. nNota1 <= 10
             exit
         else
-            accept "Nota inv lida. Informe um valor entre 0 e 10: " to nNota1
+            accept "Nota invÃ¡lida. Informe um valor entre 0 e 10: " to nNota1
         endif
     enddo
 
