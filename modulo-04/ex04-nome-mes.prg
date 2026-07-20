@@ -1,8 +1,9 @@
 REQUEST HB_LANG_PT
+
 procedure Main()
     local nMes
 
-    hb_langSelect( "PT" )
+    hb_langSelect("PT")
 
     input "Digite o número do mês de 1 a 12 (Janeiro até Dezembro): " to nMes
 
