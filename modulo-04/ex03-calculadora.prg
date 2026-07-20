@@ -22,11 +22,9 @@ function Calculadora()
     local nA := 0
     local nB := 0
 
-    //Lendo o primeiro numero
     ACCEPT "Digite o 1° valor: " TO cValorEntrada
     nA := Val(cValorEntrada)
 
-    //Lendo a operacao
     QOut("Escolha a operação: + (Soma), - (Sub), * (Mult), / (Div), ^ (Potencia), R (Raiz Quadrada)")
     ACCEPT "Escolha a operacao: " TO cOperador
 
