@@ -6,7 +6,7 @@ procedure Main()
         tDataHora := ObterHora()
         cHoraFormatada := FormatarHora(tDataHora)
         ExibirHora(cHoraFormatada)
-        Sleep(1000.0)
+        Sleep(3000.0)
         CLEAR SCREEN
     enddo
 
